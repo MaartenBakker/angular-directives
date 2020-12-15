@@ -10,10 +10,16 @@
           class="list-group-item">
         </li>
       </ul>
-      <ng-template [ngIf]="onlyOdd">
+<!--      <ng-template [ngIf]="onlyOdd">-->
+<!--        <div-->
+<!--          *ngFor="let number of numbers"-->
+<!--          >{{ number }}-->
+<!--        </div>-->
+<!--      </ng-template>-->
+      <ng-template *appUnless="onlyOdd">
         <div
           *ngFor="let number of numbers"
-          >{{ number }}
+        >{{ number }}
         </div>
       </ng-template>
       <p appBasicHighlight>Style me with a basic directive</p>
