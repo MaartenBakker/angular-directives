@@ -16,12 +16,12 @@
 <!--          >{{ number }}-->
 <!--        </div>-->
 <!--      </ng-template>-->
-      <ng-template *appUnless="onlyOdd">
+      <div *appUnless="onlyOdd">
         <div
           *ngFor="let number of numbers"
         >{{ number }}
         </div>
-      </ng-template>
+      </div>
       <p appBasicHighlight>Style me with a basic directive</p>
       <p appBetterHighlight [highlightColor]="'red'" [defaultColor]="'transparent'"> Style me with better basic directive</p>
     </div>
